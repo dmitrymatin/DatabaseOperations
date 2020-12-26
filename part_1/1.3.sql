@@ -23,3 +23,8 @@ GO
 
 DELETE FROM Doctor
 GO
+
+--USE master
+--GO
+--DROP DATABASE MedicalAppointments
+--GO
