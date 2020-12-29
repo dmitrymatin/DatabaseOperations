@@ -3,7 +3,6 @@ GO
 
 CREATE ROLE doctors
 GO
-GO
 GRANT INSERT, UPDATE, DELETE ON Patient TO doctors
 GO
 GRANT INSERT, UPDATE, DELETE ON Appointment TO doctors
