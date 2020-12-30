@@ -1,14 +1,6 @@
 ﻿USE MedicalAppointments
 GO
 
---SELECT * FROM Patient
---SELECT * FROM Doctor
-
---SELECT FullName, 1 AS is_patient, 0 AS is_doctor FROM Patient
---UNION 
---SELECT FullName, 0 AS is_patient, 1 AS is_doctor FROM Doctor
-
-
 DECLARE people_cursor CURSOR
 	FOR 
 	SELECT FullName, 1 AS is_patient, 0 AS is_doctor FROM Patient
@@ -91,5 +83,3 @@ WHILE @@FETCH_STATUS = 0
 
 CLOSE people_cursor;
 DEALLOCATE people_cursor;
-
-
