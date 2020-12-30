@@ -1,0 +1,1 @@
+select CAST(GETDATE() AS time(0)) AS 'time'   
