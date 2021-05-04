@@ -13,7 +13,7 @@ SELECT * FROM Patient
  -- MUST FAIL (patients), MUST SUCCEED (doctors)
  INSERT INTO PossibleTreatment (IllnessCode, MedicineCode) VALUES (1, 2);
  -- MUST FAIL (patients, doctors)
- INSERT INTO Doctor (FullName, PhoneNumber, Speciality) VALUES (N'Ив Ив Ив', N'123', N'несуществующий');
+ INSERT INTO Doctor (FullName, PhoneNumber, Speciality) VALUES (N'РРІ РРІ РРІ', N'123', N'РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёР№');
 
  -- MUST FAIL (patients), MUST SUCCEED (doctors)
  UPDATE Appointment SET Duration = 20 WHERE Code = 10;
